@@ -1,0 +1,6 @@
+resource "google_storage_bucket" "my_bucket" {
+  name          = "github-demo-vas1" # Replace with your desired unique bucket name
+  project       = "optical-mind-471204-a7"         # Replace with your Google Cloud Project ID
+  location      = "US-CENTRAL1"             # Choose an appropriate location (e.g., US-CENTRAL1, EUROPE-WEST1)
+  force_destroy = true                      # Allows deletion of non-empty buckets
+}
